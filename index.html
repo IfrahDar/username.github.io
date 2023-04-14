@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Programmer Portfolio - [Your Name]</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <style>/* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        
+        /* Header styles */
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 20px;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #007bff;
+        }
+        
+        /* Main styles */
+        main {
+            padding: 40px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        li h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        li h4 {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+        
+        li p {
+            margin-bottom: 15px;
+        }
+        
+        /* Contact form styles */
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        form input,
+        form textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        
+        form input:focus,
+        form textarea:focus {
+            border-color: #007bff;
+        }
+        
+        form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        form input[type="submit"]:hover {
+            background-color: #0062cc;
+        }
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        .carousel-indicators {
+  display: none;
+}
+        </style>
+</head>
+<body>
+	<header>
+		<h1>[Your Name]</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x400?text=First+slide" class="d-block w-100" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some text goes here that describes the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400?text=Second+slide" class="d-block w-100" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some text goes here that describes the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400?text=Third+slide" class="d-block w-100" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some text goes here that describes the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+          
+		<section id="about">
+			<h2>About Me</h2>
+			<p>[Write a brief introduction about yourself and your career goals.]</p>
+		</section>
+
+		<section id="experience">
+			<h2>Experience</h2>
+			<ul>
+				<li>
+					<h3>[Job Title]</h3>
+					<h4>[Company Name] | [Location]</h4>
+					<p>[Job Description and your contributions to the project or the team.]</p>
+				</li>
+				<li>
+					<h3>[Job Title]</h3>
+					<h4>[Company Name] | [Location]</h4>
+					<p>[Job Description and your contributions to the project or the team.]</p>
+				</li>
+			</ul>
+		</section>
+
+		<section id="projects">
+			<h2>Projects</h2>
+			<ul>
+				<li>
+					<h3>[Project Title]</h3>
+					<p>[Brief description of the project and your role in it.]</p>
+				</li>
+				<li>
+					<h3>[Project Title]</h3>
+					<p>[Brief description of the project and your role in it.]</p>
+				</li>
+			</ul>
+		</section>
+
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<form action="submit.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; [Year] [Your Name] - Programmer Portfolio</p>
+    </footer>
+    
+    <script>
+        
+        /* Contact form validation */
+        const form = document.querySelector('.contact-form');
+        const nameInput = document.querySelector('#name');
+        const emailInput = document.querySelector('#email');
+        const messageInput = document.querySelector('#message');
+        const submitButton = document.querySelector('.submit-button');
+        const successMessage = document.querySelector('.success-message');
+        
+        const validateForm = () => {
+            let isValid = true;
+        
+            // Validate name field
+            if (nameInput.value.trim() === '') {
+                isValid = false;
+                nameInput.classList.add('error');
+            } else {
+                nameInput.classList.remove('error');
+            }
+        
+            // Validate email field
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (emailInput.value.trim() === '' || !emailRegex.test(emailInput.value)) {
+                isValid = false;
+                emailInput.classList.add('error');
+            } else {
+                emailInput.classList.remove('error');
+            }
+        
+            // Validate message field
+            if (messageInput.value.trim() === '') {
+                isValid = false;
+                messageInput.classList.add('error');
+            } else {
+                messageInput.classList.remove('error');
+            }
+        
+            return isValid;
+        };
+        
+        submitButton.addEventListener('click', (event) => {
+            event.preventDefault();
+        
+            if (validateForm()) {
+                form.reset();
+                successMessage.style.display = 'block';
+            }
+        });
+
+        var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'));
+        </script>
+</body>
+</html>
+
